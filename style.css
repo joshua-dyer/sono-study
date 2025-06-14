@@ -25,14 +25,14 @@ body{
     background-color: var(--outer-container-bg);
     display: flex;
     justify-content: center;
-    height: 64vh;
+    height: 44vh;
     margin: 0px;
     padding-top: 1px;
 
 }
 .image-container{
-    height: 60vh;
-    width: 60vw;
+    height: 90%;
+    width: 80%;
     margin: 10px 10px 10px 10px;
     border-radius: 15px;
     background-color: var(--image-bg);
