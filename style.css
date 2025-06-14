@@ -1,0 +1,45 @@
+:root{
+    --main-bg: hsl(240, 34%, 27%);
+    --main-text: hsl(0, 0%, 78%);
+    --panel-bg: rgb(77, 168, 198);
+    --image-bg: hsl(0, 1%, 67%);
+    --outer-container-bg: black;
+    
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+body{
+    background-color: var(--main-bg);
+}
+
+.nav-menu{
+    height: 4vh;
+    background-color: var(--panel-bg);
+    text-align: center;
+    padding-top: 1vh;
+    margin: 0px;
+}
+
+.outer-container{
+    background-color: var(--outer-container-bg);
+    display: flex;
+    justify-content: center;
+    height: 64vh;
+    margin: 0px;
+    padding-top: 1px;
+
+}
+.image-container{
+    height: 60vh;
+    width: 60vw;
+    margin: 10px 10px 10px 10px;
+    border-radius: 15px;
+    background-color: var(--image-bg);
+    
+}
+
+img{
+    object-fit: contain;
+    height: 100%;
+}
