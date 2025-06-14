@@ -11,15 +11,16 @@
 
     <div class="outer-container">
         <div class="image-container">
-            <img class="current-image" src="./images/echo/plax/Labels.png" alt="" srcset="">
+            <img id="currently-displayed-image" class="current-image" src="./images/echo/plax/Labels.png" alt="" srcset="">
         </div>
     </div>
 
     <div class="button-container">
-        <button class="image-adjustor-button">Diagram</button>
-        <button class="image-adjustor-button">Labels</button>
-        <button class="image-adjustor-button">Capture</button>
+        <button id="diagram-button" onclick="switchToDiagram()" class="image-adjustor-button">Diagram</button>
+        <button id="labels-button" onclick="switchToLabels()" class="image-adjustor-button">Labels</button>
+        <button id="capture-button" onclick="switchToCapture()" class="image-adjustor-button">Capture</button>
     </div>
     
+    <script src="./script.js"></script>
 </body>
 </html>

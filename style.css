@@ -36,7 +36,7 @@ body{
     width: 80%;
     margin: 10px 10px 10px 10px;
     border-radius: 15px;
-    background-color: var(--image-bg);
+    background-color: rgb(47, 47, 47);
     
 }
 
