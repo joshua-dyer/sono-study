@@ -2,7 +2,7 @@
     --main-bg: hsl(240, 34%, 27%);
     --main-text: hsl(0, 0%, 78%);
     --panel-bg: rgb(77, 168, 198);
-    --image-bg: hsl(0, 1%, 67%);
+    --image-bg: hsl(0, 0%, 18%);
     --outer-container-bg: black;
     --button-bg: rgb(77, 168, 198);
     
@@ -36,7 +36,7 @@ body{
     width: 80%;
     margin: 10px 10px 10px 10px;
     border-radius: 15px;
-    background-color: rgb(47, 47, 47);
+    background-color: var(--image-bg);
     
 }
 
