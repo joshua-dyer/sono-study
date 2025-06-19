@@ -1,11 +1,13 @@
 :root{
-    --main-bg: hsl(240, 34%, 27%);
-    --main-text: hsl(0, 0%, 78%);
-    --panel-bg: rgb(77, 168, 198);
-    --image-bg: hsl(0, 0%, 18%);
+    --main-bg: #FFFFFF;
+    --main-text: #fce4de;
+    --panel-bg: #50587D;
+    --image-bg: #2e2e2e;
     --outer-container-bg: black;
-    --button-bg: rgb(77, 168, 198);
-    --button-text: hsl(0, 0%, 10%);
+    --button-bg: #50587D;
+    /*--button-capture-bg: rgb(61, 103, 188);*/
+    --button-hover-bg: #6b7396;
+    --button-text: #fce4de;
     
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
@@ -25,10 +27,12 @@ body{
 
 .nav-menu{
     height: 4vh;
+    color: var(--main-text);
     background-color: var(--panel-bg);
     text-align: center;
     padding-top: 1vh;
-    margin: 0px;
+    margin: 0px 0px 1vh 0px;
+    border-radius: 5px;
 }
 
 .outer-container{
@@ -38,6 +42,7 @@ body{
     align-items: center;
     height: 44vh;
     margin: 0px;
+    border-radius: 25px;
 
 }
 .image-container{
@@ -49,14 +54,23 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+
+    position: relative;
     
 }
 
-img{
+.image-container img{
     object-fit: contain;
     height: 100%;
     width: 90%;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#labels-overlay-image{
+    display: none;
 }
 
 .button-container{
@@ -64,9 +78,15 @@ img{
 }
 
 .image-adjustor-button{
-    background-color: var(--button-bg);
     color: var(--button-text);
+    background-color: var(--button-bg);
     font-size: 2rem;
-    margin: 0px 10px;
+    margin: 10px 10px;
     border-radius: 10px;
+
+
+}
+
+.image-adjustor-button:hover{
+    background-color: var(--button-hover-bg);
 }

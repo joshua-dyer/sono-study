@@ -3,21 +3,27 @@ const diagramButton = document.getElementById("diagram-button");
 const labelsButton = document.getElementById("labels-button");
 const captureButton = document.getElementById("capture-button");
 
-const currentlyDisplayedImage = document.getElementById("currently-displayed-image");
+const currentlyDisplayedImage = document.getElementById("base-diagram-image");
+const labelsElement = document.getElementById("labels-overlay-image");
 
 
 
 function switchToDiagram(){
     
-    currentlyDisplayedImage.src = "./images/echo/plax/Diagram.png"
+    currentlyDisplayedImage.src = "./images/echo/plax/diagram.png"
 }
 
 function switchToLabels(){
 
-    currentlyDisplayedImage.src = "./images/echo/plax/Labels.png"
+    if(labelsElement.style.display === 'none'){
+        labelsElement.style.display = 'block';
+    } else{
+        labelsElement.style.display = 'none';
+    }
+    
 }
 
 function switchToCapture(){
 
-    currentlyDisplayedImage.src = "./images/echo/plax/Capture.png"
+    currentlyDisplayedImage.src = "./images/echo/plax/capture.png"
 }

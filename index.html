@@ -7,18 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav-menu">Navigation Holder</div>
+    <div class="nav-menu">Ultrasound Study Application</div>
 
     <div class="outer-container">
         <div class="image-container">
-            <img id="currently-displayed-image" class="current-image" src="./images/echo/plax/Labels.png" alt="" srcset="">
+            <img id="base-diagram-image" class="current-image" src="./images/echo/plax/diagram.png" alt="Base Diagram">
+     
+            <img id="labels-overlay-image" class="current-image" src="./images/echo/plax/labels.png" alt="Labels Overlay">
         </div>
     </div>
 
     <div class="button-container">
-        <button id="diagram-button" onclick="switchToDiagram()" class="image-adjustor-button">Diagram</button>
-        <button id="labels-button" onclick="switchToLabels()" class="image-adjustor-button">Labels</button>
-        <button id="capture-button" onclick="switchToCapture()" class="image-adjustor-button">Capture</button>
+        <div id="diagram-button" onclick="switchToDiagram()" class="image-adjustor-button">Diagram</div>
+        
+        <div id="label-button" onclick="switchToLabels()" class="image-adjustor-button">Labels</div>
+   
+        <div id="capture-button" onclick="switchToCapture()" class="image-adjustor-button">Capture</div>
     </div>
     
     <script src="./script.js"></script>
