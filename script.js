@@ -6,6 +6,8 @@ const captureButton = document.getElementById("capture-button");
 const currentlyDisplayedImage = document.getElementById("base-diagram-image");
 const labelsElement = document.getElementById("labels-overlay-image");
 
+// Set the initial visibility of labels
+labelsElement.style.display = 'none';
 
 
 function switchToDiagram(){
@@ -15,7 +17,7 @@ function switchToDiagram(){
 
 function switchToLabels(){
 
-    if(labelsElement.style.display === 'none'){
+    if(labelsElement.style.display === 'none' || labelsElement.style.display === ""){
         labelsElement.style.display = 'block';
     } else{
         labelsElement.style.display = 'none';

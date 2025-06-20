@@ -35,19 +35,13 @@ body{
     border-radius: 5px;
 }
 
-.outer-container{
-    background-color: var(--outer-container-bg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.image-container{
     height: 44vh;
     margin: 0px;
     border-radius: 25px;
-
-}
-.image-container{
-    height: 90%;
-    width: 80%;
+    border: 2px solid black;
+ 
     border-radius: 15px;
     background-color: var(--image-bg);
     display: flex;
@@ -62,7 +56,7 @@ body{
 .image-container img{
     object-fit: contain;
     height: 100%;
-    width: 90%;
+    width: 100%;
     display: block;
     position: absolute;
     top: 0;
