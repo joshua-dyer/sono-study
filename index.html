@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="nav-menu">Ultrasound Study Application</div>
+    <div class="nav-menu">
+        <div class="title-display">Ultrasound Study Application</div> 
+
+        <div class="view-selector-container">
+            <label for="view-selector">Select View:</label>
+            <select name="view-selector" id="view-selector">
+                <option value="plax">PLAX</option>
+                <option value="psax-av">PSAX-AV</option>
+                <option value="psax-av">PSAX-LV</option>
+                <option value="a4c">A4C</option>
+                <option value="subcostal">Subcostal</option>
+                <option value="substernal">Substernal</option>
+            </select>
+        </div>
+
+    </div>
 
     <div class="outer-container">
         <div class="image-container">

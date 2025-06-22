@@ -11,6 +11,7 @@
     
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
+    font-size: 16px;
 }
 
 html{
@@ -23,25 +24,62 @@ html{
 
 body{
     background-color: var(--main-bg);
+    margin: 0;
 }
 
 .nav-menu{
-    height: 4vh;
+    height: 8vh;
     color: var(--main-text);
     background-color: var(--panel-bg);
-    text-align: center;
-    padding-top: 1vh;
     margin: 0px 0px 1vh 0px;
     border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 0 25px;
 }
 
+.title-display{
+    font-size: 3rem;
+}
+.view-selector-container{
+    gap: 10px;
+    font-size: 2rem;
+}
+
+#view-selector{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.5em 1.5em 0.5em 0.5em;
+    height: 2.5em;
+    min-width: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    /* Add a custom dropdown arrow using a background image */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23fce4de" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.5em center; /* Position the arrow to the right, centered vertically */
+    background-size: 1.5em; /* Size of the arrow */
+}
+
+#view-selector:hover,
+#view-selector:focus{
+    background-color: var(--button-hover-bg);
+    outline: none;
+}
 
 .image-container{
     height: 44vh;
     margin: 0px;
     border-radius: 25px;
     border: 2px solid black;
- 
     border-radius: 15px;
     background-color: var(--image-bg);
     display: flex;
@@ -74,8 +112,9 @@ body{
 .image-adjustor-button{
     color: var(--button-text);
     background-color: var(--button-bg);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 10px 10px;
+    padding: 10px 0;
     border-radius: 10px;
 
 
@@ -83,4 +122,5 @@ body{
 
 .image-adjustor-button:hover{
     background-color: var(--button-hover-bg);
+    cursor: pointer;
 }
