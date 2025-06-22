@@ -30,10 +30,7 @@ body{
 .nav-menu{
     height: 10%;
     min-height: 50px;
-    color: red;
-    /*
     color: var(--main-text);
-    */
     background-color: var(--panel-bg);
     margin: 0px 0px 1vh 0px;
     border-radius: 5px;
@@ -75,9 +72,22 @@ body{
     left: 0;
 }
 
-#labels-overlay-image{
-    display: none;
+
+#labels-overlay-image {
+    opacity: 0; /* Initially hidden (transparent) */
+    visibility: hidden; /* Prevent interaction when transparent */
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; /* Smooth transition */
 }
+
+/* New class to make labels visible and opaque */
+#labels-overlay-image.is-visible {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Allow interaction */
+}
+
+
+
+
 
 .button-container{
     padding: 2vh 2vw;

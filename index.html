@@ -25,20 +25,20 @@
     <div class="button-container">
         <div id="diagram-button" onclick="switchToDiagram()" class="image-adjustor-button">Diagram</div>
         
-        <div id="labels-button" onclick="switchToLabels()" class="image-adjustor-button">Labels</div>
+        <div id="labels-button" onclick="toggleLabels()" class="image-adjustor-button">Labels</div>
    
         <div id="capture-button" onclick="switchToCapture()" class="image-adjustor-button">Capture</div>
     
     
         <div class="view-selector-container">
-            <select name="view-selector" id="view-selector">
+            <select name="view-selector" id="view-selector" onchange="changePathToImages()">
                 <option value="">Select View</option>
                 <option value="plax">PLAX</option>
                 <option value="psax-av">PSAX-AV</option>
-                <option value="psax-av">PSAX-LV</option>
+                <option value="psax-lv">PSAX-LV</option>
                 <option value="a4c">A4C</option>
                 <option value="subcostal">Subcostal</option>
-                <option value="substernal">Substernal</option>
+                <option value="suprasternal">Suprasternal</option>
             </select>
         </div>
     
