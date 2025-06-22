@@ -28,17 +28,19 @@ body{
 }
 
 .nav-menu{
-    height: 4vh;
+    height: 10%;
     min-height: 50px;
+    color: red;
+    /*
     color: var(--main-text);
+    */
     background-color: var(--panel-bg);
     margin: 0px 0px 1vh 0px;
     border-radius: 5px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: left;
-    padding: 0 25px;
+
 }
 
 .title-display{
