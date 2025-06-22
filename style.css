@@ -29,6 +29,7 @@ body{
 
 .nav-menu{
     height: 8vh;
+    min-height: 100px;
     color: var(--main-text);
     background-color: var(--panel-bg);
     margin: 0px 0px 1vh 0px;
@@ -41,11 +42,11 @@ body{
 }
 
 .title-display{
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 .view-selector-container{
     gap: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #view-selector{
