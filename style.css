@@ -28,8 +28,8 @@ body{
 }
 
 .nav-menu{
-    height: 8vh;
-    min-height: 100px;
+    height: 4vh;
+    min-height: 50px;
     color: var(--main-text);
     background-color: var(--panel-bg);
     margin: 0px 0px 1vh 0px;
@@ -78,7 +78,7 @@ body{
 }
 
 .button-container{
-    padding: 2vh;
+    padding: 2vh 2vw;
 }
 
 .image-adjustor-button{
@@ -106,7 +106,7 @@ body{
     background-color: var(--button-bg);
     color: var(--button-text);
     padding: 0.5em 1.5em 0.5em 0.5em;
-    height: 2.5rem;
+    
     width: 98%;
     font-size: 1.5rem;
     cursor: pointer;
